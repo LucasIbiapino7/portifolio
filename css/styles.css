@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2C2C2C;
+}
+
+.container-header{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.header{
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+}
+
+.header h1{
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+}
+
+.header h2{
+    font-weight: 600;
+    font-size: 20px;
+    color: #B3B3B3;
+}
+
+.header img{
+    width: calc(100% - 10px);
+    max-width: 420px;
+    border-radius: 24px;
+}
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-links img{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button{
+    background: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 24px;
+    width: 280px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.button img{
+    margin-left: 10px;
+}
+
+.div-button{
+    display: flex;
+    justify-content: center;
+}
+
+.about{
+    padding: 10px;
+    color: white;
+}
+
+.about-container{
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+}
+
+.about h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.about p{
+    text-align: center;
+    font-weight: 400;
+}
+
+.technologies{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.technologies h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.technologies-imgs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.technologies-imgs-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #B3B3B3;
+}
+
+.technologies-imgs img{
+    width: 35px;
+    cursor: pointer;
+}
+
+.Projetos{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Projetos-container{
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Projetos h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.card-projetos{
+    width: calc(100%);
+    max-width: 315px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 24px;
+    max-height: 320px;
+}
+
+.card-projetos-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+    gap: 10px;
+}
+
+.card-projetos-tech{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-projetos-btns{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.card-projetos-btns p{
+    font-size: 10px;
+}
+
+.card-projetos-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.button-card{
+    background: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 24px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.card-projetos-content h3{
+    color: white;
+}
+
+.card-projetos-content p{
+    color: #B3B3B3;
+}
+
+@media(min-width:768px){
+    .header img{
+        border-radius: 400px;
+        width: 221px;
+    }
+
+    .header h1{
+        font-size: 40px;
+    }
+
+    .header h2{
+        font-size: 34px;
+    }
+
+    .container-header{
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .social-links{
+        justify-content:center;
+        gap: 65px;
+    }
+
+    .about h2{
+        font-size: 34px;
+    }
+
+    .about p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .technologies-imgs{
+        justify-content: center;
+        gap: 65px;
+    }
+
+    .technologies h2{
+        font-size: 34px;
+    }
+
+    .technologies-imgs img{
+        width: 50px;
+    }
+
+    .Projetos h2{
+        font-size: 34px;
+    }
+
+}
